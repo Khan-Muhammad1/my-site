@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <title>Muhammad Khan – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
-      color: #333;
-      text-align: center;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    .container {
-      max-width: 700px;
-      margin: 80px auto;
-      padding: 20px;
-      background: white;
+    .card {
+      background: #ffffff;
+      color: #333;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+      max-width: 600px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      text-align: center;
     }
 
     h1 {
@@ -29,10 +34,11 @@
 
     p {
       font-size: 1.2rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .btn {
+      display: inline-block;
       background-color: #007bff;
       color: white;
       padding: 12px 24px;
@@ -49,16 +55,23 @@
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 0.9rem;
-      color: #777;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        margin: 20px;
+        padding: 30px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="card">
     <h1>Hi, I'm Muhammad Khan</h1>
-    <p>I'm a Computer Engineering graduate from York University who loves building cool things with code and cloud tools.</p>
+    <p>A Computer Engineering graduate passionate about cloud tech, building smart systems, and solving real-world problems with code.</p>
 
     <a class="btn" href="resume.pdf" target="_blank">📄 View My Resume</a>
 
